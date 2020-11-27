@@ -1,0 +1,48 @@
+<head>
+	<title>Comment Form</title>
+</head>
+<style>
+input[type=text], select {
+  width: 70%;
+  padding: 12px 20px;
+  margin: 8px 120px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 50%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 120px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+</style>
+<body>
+	<div>
+  <form action = "insert.php" method = "post" id="CommentForm" class="form-group">
+    <label for="idName" style="margin: auto 120px">Product</label>
+    <input type="text" name = "Product" id="idName" placeholder="Enter Name"> <br>
+    <label for="idComment" style="margin: auto 120px">Price</label>
+    <input type="text" name = "Price" id="idComment" placeholder="Enter Comment"></input><br>
+    <label for="idLink" style="margin: auto 120px">Discount</label>
+    <input type="text" name = "Discount" id="idLink" placeholder="Enter Link"> <br><br>
+    <input type="submit" id="commentBtn"class="btn btn-outline-warning">
+  </form>
+  </form>
+	</div>
